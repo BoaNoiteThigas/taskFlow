@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TaskFlow</h1>
+        <button class="btn-add-task">Adicionar Tarefa</button>
+        <button class="btn-clean-tasks">Limpar Tarefas</button>
+    </header>
+    <main>
+        <form class="form-add-task hidden">
+            <textarea class="app__form-textarea" placeholder="Descreva sua tarefa..."></textarea>
+            <button type="submit">Adicionar</button>
+        </form>
+        <section id="activeTaskSection">
+            <h3> Tarefa Ativa: </h3>
+            <div id="taskDescriptionDisplay"> </div>
+            <div id="focusStatus">
+                <p id="focusTimer"> 0:00 </p>
+                <button id="startFocusButton"> Timer</button>
+            </div>
+        </section>
+        <section class="task-list">
+            <h2>Suas Tarefas</h2>
+            <div class="app__section-task-list"></div>
+        </section>
+
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
